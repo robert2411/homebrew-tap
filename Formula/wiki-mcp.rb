@@ -5,21 +5,21 @@
 class WikiMcp < Formula
   desc "Personal wiki server with MCP integration"
   homepage "https://github.com/robert2411/wiki-mcp"
-  version "0.5.1"
+  version "0.5.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/robert2411/wiki-mcp/releases/download/v0.5.1/wiki-mcp_0.5.1_darwin_amd64.tar.gz"
-      sha256 "a83436ee71cebb4ca030ffb9996efae1819a007c50f33ec59939cc49e58f930c"
+      url "https://github.com/robert2411/wiki-mcp/releases/download/v0.5.2/wiki-mcp_0.5.2_darwin_amd64.tar.gz"
+      sha256 "4ef5a289f98bf55dcb236d6e08c2bdd46fae2f4fd17dd03d16a56b1d84890e32"
 
       define_method(:install) do
         bin.install "wiki-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/robert2411/wiki-mcp/releases/download/v0.5.1/wiki-mcp_0.5.1_darwin_arm64.tar.gz"
-      sha256 "5b727f3b132a2b56b063a72d91b1a36c5efccf9fd1e9e14a5a45552a385ac3a0"
+      url "https://github.com/robert2411/wiki-mcp/releases/download/v0.5.2/wiki-mcp_0.5.2_darwin_arm64.tar.gz"
+      sha256 "5069df55093e15d99563d82763ffedeef01f7e971ad4649232ecff431209cf6e"
 
       define_method(:install) do
         bin.install "wiki-mcp"
@@ -29,15 +29,15 @@ class WikiMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robert2411/wiki-mcp/releases/download/v0.5.1/wiki-mcp_0.5.1_linux_amd64.tar.gz"
-      sha256 "a945dde7663bb347aded7d723f4f0ad6699d4b0964e63316c6cb1ae9358f891d"
+      url "https://github.com/robert2411/wiki-mcp/releases/download/v0.5.2/wiki-mcp_0.5.2_linux_amd64.tar.gz"
+      sha256 "43526db4af87daf5f0b56661810a3422248ce4b0efccd65c7790769d71308546"
       define_method(:install) do
         bin.install "wiki-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robert2411/wiki-mcp/releases/download/v0.5.1/wiki-mcp_0.5.1_linux_arm64.tar.gz"
-      sha256 "37e06eceb972c5486149a3e18c881b0e58843b5bc70e10edd1f289794e839fd5"
+      url "https://github.com/robert2411/wiki-mcp/releases/download/v0.5.2/wiki-mcp_0.5.2_linux_arm64.tar.gz"
+      sha256 "9274b9cbe268b760c8247dd7c899125ec2619adcac2bf98bb9624d71fe75f4de"
       define_method(:install) do
         bin.install "wiki-mcp"
       end
